@@ -2,7 +2,7 @@
 - name: Install Python
   hosts: pis
   gather_facts: no
-  remote_user: pirate
+  remote_user: pi
   become: true
   become_method: sudo
 
@@ -13,7 +13,7 @@
 - name: Setup Raspberry Pi Base system
   hosts: pis
   gather_facts: yes
-  remote_user: pirate
+  remote_user: pi
   become: true
   become_method: sudo
   vars_files:
